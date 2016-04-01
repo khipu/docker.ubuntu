@@ -35,6 +35,9 @@ pip_version_docker_compose: latest
 # Warning: Use with caution in production environments.
 kernel_update_and_reboot_permitted: no
 
+# alow to restart docker daemon
+docker_restart_permitted: no
+
 # Set to 'yes' or 'true' to enable updates (sets 'latest' in apt module)
 update_docker_package: no
 # Change these to 'present' if you're running Ubuntu 12.04-13.10 and are fine with less-than-latest packages

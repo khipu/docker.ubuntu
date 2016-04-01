@@ -8,6 +8,8 @@
 
 - name: Restart docker
   service: name=docker state=restarted
+  when: docker_restart_permitted
 
 - name: Restart dockerio
   service: name=docker.io state=restarted
+  when: docker_restart_permitted
